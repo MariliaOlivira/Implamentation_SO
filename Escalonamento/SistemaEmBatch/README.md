@@ -1,8 +1,8 @@
 # Sistemas em Lotes(Batch)
 ## 📉 Sistema multitarefa
 #
-<div>
-    <p>
+<div align= "center">
+    <p align="left">
     O sistema em lote, foi um dos primeiros sistemas multitarefas
     a serem implementados. Nele, todos os <strong>jobs</strong> 
     era levados em uma fila de excução unica:
