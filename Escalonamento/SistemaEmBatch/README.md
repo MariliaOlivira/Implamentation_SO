@@ -9,4 +9,7 @@
     </p>
     </br>
     <img src="https://sites.google.com/site/ifsulmiguel/_/rsrc/1521586909000/disciplinas/sistemas-operacionais/unidade-ii-tipos-de-sistemas-operacionais/2-2-sistemas-multiprogramaveis/batch.jpg">
+    <p align="left">
+    s
+    </p>
 </div>
