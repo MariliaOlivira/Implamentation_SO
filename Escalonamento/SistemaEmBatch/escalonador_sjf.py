@@ -1,3 +1,5 @@
-import src.processo as b
-a = b.Process("oi", 1)
-print(a.name)
+import sys
+sys.path.append(r"/home/marilia/Projetos/so/SO_chico_lied_eu/processo/process")
+import process as p
+
+print(sys.path)
