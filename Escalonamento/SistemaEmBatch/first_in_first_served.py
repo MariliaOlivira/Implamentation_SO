@@ -1,6 +1,6 @@
 from copy import deepcopy
 from batch_generator import *
-import csv, time
+import time
 
 def fifs_escalonator(process_batch:dict):
   i = list(process_batch.keys())[0]
