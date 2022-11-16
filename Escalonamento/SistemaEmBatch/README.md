@@ -23,7 +23,7 @@
     <h3><i>producer by:</i></h3>
     </br>
     <a href="https://github.com/MariliaOlivira"><img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"width = "56"></a>
-    <a href="https://github.com/MariliaOlivira"><img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"width = "56"></a>
-    <a href="https://github.com/MariliaOlivira"><img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"width = "56"></a>
+    <a href="https://github.com/LiedsonAugusto"><img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"width = "56"></a>
+    <a href="https://github.com/Fran0212"><img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"width = "56"></a>
 </div>
 
