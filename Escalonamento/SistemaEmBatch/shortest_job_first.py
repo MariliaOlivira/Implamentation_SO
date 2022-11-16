@@ -1,15 +1,5 @@
-import csv, time
-
-def obj_generate_ordered(file_client):
-  obj = []
-  with open(file_client, 'r') as file:
-    arq = csv.reader(file, delimiter=";")
-    enumerate_tuple_result = enumerate(arq)
-
-    for i in enumerate_tuple_result:
-      obj.append(i)
-
-  return sorted(obj, key= lambda x: int(x[1][1]))
+from batch_generator import obj_generate_ordered
+import time
 
 process_list = dict(obj_generate_ordered('casos_teste/arq.csv'))
 

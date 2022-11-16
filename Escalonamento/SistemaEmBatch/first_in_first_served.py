@@ -3,7 +3,11 @@ from batch_generator import *
 import time
 
 def fifs_escalonator(process_batch:dict):
-  i = list(process_batch.keys())[0]
+  try:
+    i = list(process_batch.keys())[0]
+  except IndexError:
+    return
+
   process_info = process_batch[i]
   process_service_time = int(process_info[1])
 
@@ -26,13 +30,13 @@ def fifs_escalonator(process_batch:dict):
   del process_batch[i]
 
   fifs_escalonator(process_batch)
+  return
 
 
 file_path1 = 'casos_teste/arq.csv'
 file_path2 = 'casos_teste/arq2.csv'
 
 process_batch = obj_generate(file_path1)
-cpy_batch = deepcopy(process_batch)
 
 fifs_escalonator(process_batch)
 
