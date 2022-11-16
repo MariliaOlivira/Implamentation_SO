@@ -9,6 +9,18 @@ def obj_generate(file_client) -> dict:
 
   return obj
 
+def priority_queue_generate(file_client) -> dict:
+  obj = [[] for i in range(5)]
+
+  with open(file_client, 'r') as file:
+    arq = csv.reader(file, delimiter=";")
+    for i in enumerate(arq):
+      info = i[1]
+      priority = 5 - int(info[2])
+      obj[priority].append(info)
+
+  return obj
+
 def obj_generate_ordered(file_client):
   obj = []
   with open(file_client, 'r') as file:
