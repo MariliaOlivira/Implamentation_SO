@@ -1,4 +1,4 @@
-from process_getters import get_process_list, new_process_bach
+from process_getters import get_process_list, job_log, new_process_bach, FILE_TEST_PATH_1, FILE_TEST_PATH_2
 import time
 
 quantum = 20
@@ -17,13 +17,7 @@ def round_robin(process_dict, to_add = False, round = 1):
     process_info = process_dict[i]
     process_service_time = int(process_info[1])
 
-    print(f'''
-    \rExecutando {i}:
-      \r\ttempo de execução: {process_service_time}
-      \r\ttempo de quantum: {quantum}
-      \r\tcomando de invocação: {process_info[3]}
-      \r\tusuario: {process_info[-1]}
-    ''')
+    job_log(i, process_info)
 
     time.sleep(quantum/10)
 
@@ -36,7 +30,7 @@ def round_robin(process_dict, to_add = False, round = 1):
 
   if to_add and round == 1:
     print("Recebendo novos processos\n")
-    new_process_bach('casos_teste/arq_sis_interativo2.csv', process_dict)
+    new_process_bach(FILE_TEST_PATH_2, process_dict)
 
   for key in to_del:
     del process_dict[key]
@@ -45,6 +39,6 @@ def round_robin(process_dict, to_add = False, round = 1):
   round_robin(process_dict, True, round)
   return
 
-process_dict:dict = get_process_list('casos_teste/arq_sis_interativo.csv')
+process_dict:dict = get_process_list(FILE_TEST_PATH_1)
 round_robin(process_dict)
 print("Todos os processos foram finalizados")
