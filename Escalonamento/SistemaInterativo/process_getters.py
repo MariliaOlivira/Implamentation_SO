@@ -58,3 +58,9 @@ def job_log(process_info ,quantum = 0):
       \r\tcomando de invocação: {process_info[3]}
       \r\tusuario: {process_info[-1]}
     ''')
+
+def quantum_based_on_number_of_users(obj_process):
+  users = set()
+  for process in obj_process:
+    users.add(obj_process[process][3])
+  return len(users)
