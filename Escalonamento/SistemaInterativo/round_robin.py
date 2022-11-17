@@ -17,7 +17,7 @@ def round_robin(process_dict, to_add = False, round = 1):
     process_info = process_dict[i]
     process_service_time = int(process_info[1])
 
-    job_log(i, process_info)
+    job_log(process_info)
 
     time.sleep(quantum/10)
 
